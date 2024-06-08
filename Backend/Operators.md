@@ -1,41 +1,41 @@
 ## Operators Command:
 
 ## Comparison Operators:
+```
+- <= : lte (less then and equal to)
 
-### <= : lte (less then and equal to)
+- >= : gte (greater then and equal to)
 
-### >= : gte (greater then and equal to)
+- <  : lt (less then)
 
-### < : lt (less then)
+- >  : gt (greater then)
 
-### > : gt (greater then)
+- == : eq (equal to)
 
-### == : eq (equal to)
-
-### != : ne (not equal to)
-
+- != : ne (not equal to)
+```
 - Example:
-  - db.fictional.find({price:{$gte:100}})
-
-## IMP NOTE: Don't forget to use `$` sign before using operators
-
-    - ex. $lt, $gt, $eq
+  - db.fictional.find( { price: { $gte: 100 } } )
 
 ## Logical Operators:
+```
+1. && : and
 
-### && : and
-
-### || : or
+2. || : or
 
 - Example:
   - db.LecturePracticeI.find({$and:[{gender:"Female"}, {age:{$lte:25}}]})
 
-### skip and limit:
+ skip and limit:
 
     - db.LecturePracticeI.find().skip(<any int value>).limit(<any int value>)
     - useful for pagination
+```
 
-### sort:
+## IMP NOTE: Don't forget to use `$` sign before using operators
+  - ex. $lt, $gt, $eq
+
+## sort:
 
     - db.LecturePracticeI.find().sort({key:value})
     - key: (on which basis want to sort/filter/identifier)
