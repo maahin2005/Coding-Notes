@@ -1,8 +1,8 @@
 ## Aggregation => MongoDB framework
 
-### Syntex: db.<collectionName>.aggregate([])
+### Syntex: db.collectionName.aggregate([])
 
-#### db.<collectionName>.aggregate([]) => initiates pipelines aggregation on the given collection.
+#### db.collectionName.aggregate([]) => initiates pipelines aggregation on the given collection.
 
 - Aggregation Pipeline:
 
